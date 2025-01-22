@@ -8,7 +8,7 @@ body {
 }
 
 .site-header {
-  background-color: #6f4f3a; /* Cor terrosa */
+  background-color: #ff6600; /* Cor terrosa */
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -27,7 +27,7 @@ h1 {
 }
 
 .tab-btn {
-  background-color: #6f4f3a;
+  background-color: #ff6600;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -36,7 +36,7 @@ h1 {
 }
 
 .tab-btn:hover {
-  background-color: #4e3629;
+  background-color: #ff6600;
 }
 
 /* Home Section */
@@ -64,7 +64,7 @@ h1 {
 }
 
 .btn-whatsapp {
-  background-color: #25d366;
+  background-color: #0026ff;
   padding: 10px 20px;
   text-decoration: none;
   color: white;
@@ -107,7 +107,7 @@ h1 {
 /* Tarja de destaque "Conheça nossa equipe" */
 .team-header {
   text-align: center;
-  background-color: #6f4f3a;
+  background-color: #ff6600;
   color: white;
   font-weight: bold;
   padding: 15px;
@@ -144,7 +144,7 @@ h1 {
   width: 150px;  /* Tamanho da foto do membro */
   height: 150px;
   border-radius: 50%;
-  border: 5px solid #6f4f3a;
+  border: 5px solid #ff6600;
 }
 
 /* Ajuste da tarja sobre o nome para que fiquem lado a lado */
@@ -153,7 +153,7 @@ h1 {
   font-size: 1.2em;
   font-weight: bold;
   color: white;
-  background-color: #6f4f3a;  /* Cor de fundo terrosa */
+  background-color: #ff6600;  /* Cor de fundo terrosa */
   padding: 10px 20px;
   border-radius: 5px;
   margin-top: 10px;
@@ -170,7 +170,7 @@ h1 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px solid #6f4f3a;
+  border: 5px solid #ff6600;
 }
 
 /* Ajustes no nome dos membros e tarja */
@@ -179,7 +179,7 @@ h1 {
   font-size: 1.2em;
   font-weight: bold;
   color: white;
-  background-color: #6f4f3a;  /* Cor de fundo da tarja */
+  background-color: #ff6600;  /* Cor de fundo da tarja */
   padding: 8px 20px;
   border-radius: 20px;
   margin-top: 10px;
@@ -190,7 +190,7 @@ h1 {
   position: relative;
   display: inline-block;
   padding: 10px;
-  background-color: #6f4f3a;
+  background-color: #ff6600;
   color: white;
   border-radius: 5px;
   font-weight: bold;
@@ -228,7 +228,7 @@ input, textarea {
 button[type="submit"], .btn-whatsapp {
   width: 100%;
   padding: 10px;
-  background-color: #6f4f3a;
+  background-color: #0026ff;
   color: white;
   font-size: 1.2em;
   border: none;
@@ -238,7 +238,7 @@ button[type="submit"], .btn-whatsapp {
 }
 
 button[type="submit"]:hover, .btn-whatsapp:hover {
-  background-color: #4e3629;
+  background-color: #0026ff;
 }
 
 /* Navegação de Abas */
@@ -250,7 +250,7 @@ button[type="submit"]:hover, .btn-whatsapp:hover {
 }
 
 .tab-btn {
-  background-color: #6f4f3a;
+  background-color: #ff6600;
   color: white;
   padding: 15px 25px;
   border: none;
@@ -260,7 +260,7 @@ button[type="submit"]:hover, .btn-whatsapp:hover {
 }
 
 .tab-btn:hover {
-  background-color: #4e3629;
+  background-color: #0026ff;
 }
 
 /* Estilo das abas ativas */
@@ -304,7 +304,7 @@ button[type="submit"]:hover, .btn-whatsapp:hover {
 
 /* Tarja para o título "Nossos Tours" */
 header h2 {
-  background-color: #6f4f3a;  /* Cor terrosa */
+  background-color: #ff6600;  /* Cor terrosa */
   color: white;
   padding: 15px;
   font-size: 2em;
@@ -314,7 +314,7 @@ header h2 {
 
 /* Estilo para as tarjas nos nomes das cidades */
 .tour-info h3 {
-  background-color: #6f4f3a;  /* Cor terrosa */
+  background-color: #ff6600;  /* Cor terrosa */
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -323,7 +323,7 @@ header h2 {
 }
 /* Estilo dos botões de WhatsApp e Instagram */
 button {
-  background-color: #25d366;  /* Cor verde para o WhatsApp */
+  background-color: #0026ff;  /* Cor verde para o WhatsApp */
   color: white;
   padding: 15px 30px;
   border: none;
@@ -354,7 +354,7 @@ button:active {
 
 /* Estilo do texto na tarja "CONTATO" */
 .highlight-text {
-  background-color: #6f4f3a;  /* Cor terrosa */
+  background-color: #ff6600;  /* Cor terrosa */
   color: white;
   padding: 15px;
   text-align: center;
@@ -364,7 +364,7 @@ button:active {
 }
 /* Estilo para a tarja do título */
 .highlight-tarja {
-  background-color: #6f4f3a;  /* Cor terrosa */
+  background-color: #ff6600;  /* Cor terrosa */
   color: white;
   padding: 18px 20px;
   text-align: center;
@@ -378,7 +378,7 @@ button:active {
 }
 /* Estilo para a tarja diferente */
 .highlight-tarja-diferente {
-  background-color: #4e3629;  /* Cor mais escura e sofisticada */
+  background-color: #0026ff;  /* Cor mais escura e sofisticada */
   color: white;
   padding: 20px 30px;
   text-align: center;
@@ -394,7 +394,7 @@ button:active {
 
 /* Estilo do botão WhatsApp */
 .btn-whatsapp {
-  background-color: #25d366;
+  background-color: #0026ff;
   padding: 10px 10px;
   text-decoration: none;
   color: white;
