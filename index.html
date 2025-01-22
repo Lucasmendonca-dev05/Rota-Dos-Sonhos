@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rota dos Sonhos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Cabeçalho com o nome "ROTA DOS SONHOS" -->
+  <header class="site-header">
+    <h1>ROTA DOS SONHOS</h1>
+  </header>
+
+
+  <!-- Navegação de Abas -->
+  <div class="tabs">
+    <button class="tab-btn" onclick="openTab('home')">Home</button>
+    <button class="tab-btn" onclick="openTab('regras')">Regras de Compra</button>
+    <button class="tab-btn" onclick="openTab('tours')">Nossos Tours</button>
+    <button class="tab-btn" onclick="openTab('contato')">Contato</button>
+  </div>
+
+  <!-- Home -->
+  <div id="home" class="tab-content">
+    <header class="home-header">
+      <div class="header-image">
+        <h1 class="highlight-tarja">Sejam Bem-Vindos</h1> <!-- Adicionando a tarja ao título -->
+        <img src="sua-imagem.jpg" alt="Imagem de viagem">
+      </div>
+      <div class="intro-text">
+        <h1 class="highlight-tarja-diferente">Desfrute das nossas viagens e passeios</h1> <!-- Tarja diferente -->
+        <a href="https://api.whatsapp.com/message/37IL3VYXCOBXP1?autoload=1&app_absent=0" class="btn-whatsapp">Entre em
+          contato pelo WhatsApp</a>
+      </div>
+    </header>
+
+    <section class="info-section">
+      <div class="text">
+        <h2 class="highlight-text">Conheça nossos serviços</h2>
+        <p>Somos uma agencia de viagem e turismo que proporciona as melhores ofertas. Reserve passeios com hospedagens,
+          Citytour e passeios bate volta todos os fins de semana conosco.
+
+          Temos sempre ofertas imperdíveis para o seu final de semana viajando sozinho ou em viagens em grupo e até
+          mesmo organizando aquela confraternização de sua empresa. Não hésite em nos consultar e ver as ofertas e
+          pacotes disponíveis. </p>
+      </div>
+      <div class="image">
+        <img src="imagem-info.jpg" alt="Imagem informativa">
+      </div>
+    </section>
+
+    <section class="team">
+      <h2 class="highlight-text">Conheça nossa equipe</h2>
+      <div class="team-member">
+        <img class="team-photo" src="membro1.jpg" alt="Membro da equipe">
+        <p>Paula</p>
+      </div>
+      <div class="team-member">
+        <img class="team-photo" src="membro2.jpg" alt="Membro da equipe">
+        <p>Duda</p>
+      </div>
+      <div class="team-member">
+        <img class="team-photo" src="membro3.jpg" alt="Membro da equipe">
+        <p>Francoa</p>
+      </div>
+      <div class="team-member">
+        <img class="team-photo" src="membro4.jpg" alt="Membro da equipe">
+        <p>Irmão</p>
+      </div>
+    </section>
+
+    <section class="values">
+      <div class="value">
+        <h3 class="highlight-text">Missão</h3>
+        <p>É a satisfação em realizar sonhos através de viagens, renovando os sentimentos de nossos clientes a cada
+          passeio realizado e mostrando que a visão de vida é transformada a cada lugar que nos dispomos a conhecer.
+          Estamos sempre cheios de alegria e motivação, buscando realizar um serviço diferenciado e humanizado para
+          tornar a nossa empresa cada dia melhor e reconhecida no mercado.</p>
+      </div>
+      <div class="value">
+        <h3 class="highlight-text">Visão</h3>
+        <p>Buscamos alcançar o número máximo de clientes satisfeitos em nossos serviços de viagens e turismo, visando
+          ser a melhor agência deste ramo de nosso Nordeste no que se diz respeito a satisfação e confiança de nossos
+          clientes e futuros clientes. Mantendo-se sempre no mercado com as melhores avaliações e reconhecimento.</p>
+      </div>
+      <div class="value">
+        <h3 class="highlight-text">Valores</h3>
+        <p>Respeito a todos os clientes, pois dependemos exclusivamente deles pra existir;
+
+          Respeito ao meio ambiente, pois é dele que guardamos em nossas memórias os melhores lugares;
+
+          Respeito aos nossos parceiros, pois são eles quem nos ajudam a realizar os sonhos dos clientes que acreditam
+          no serviço de nossa empresa; e acima de tudo compromisso com a realização dos sonhos de nossos clientes.</p>
+      </div>
+    </section>
+
+    <section class="location">
+      <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=...localização_em_recife..."
+        allowfullscreen=""></iframe>
+    </section>
+
+    <section class="contact-form">
+      <h3>Dúvidas?</h3>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+        <label for="duvida">Dúvida:</label>
+        <textarea id="duvida" name="duvida" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Regras de Compra -->
+  <div id="regras" class="tab-content">
+    <h2 class="highlight-text">É necessário ler com atenção</h2>
+    <h3 class="highlight-text">Política de Compra e Cancelamento</h3>
+
+    <h4 class="highlight-text">Política de Compra</h4>
+    <p>NÃO EFETUAR A COMPRA CASO POSSUA QUALQUER TIPO DE SITUAÇÃO PREVIA EM QUE VOCÊ NÃO POSSA COMPARECER AO PASSEIO
+      (não aceitaremos reclamações posteriores). É NECESSÁRIO LER TODAS AS NORMATIVAS.</p>
+
+    <ul>
+      <li><strong>Regras Gerais de Procedimento:</strong>
+        <p>Após a compra em nossa loja ou através de nosso WhatsApp, com pagamento via Cartão de Crédito, Transferência
+          Bancária ou PIX, o cliente deve nos enviar a foto ou comprovante de transação através do WhatsApp para
+          confirmação da vaga.</p>
+      </li>
+      <li><strong>Envio de Dados Pessoais:</strong>
+        <p>É necessário enviar os dados pessoais de todos os participantes (nome completo, RG, órgão emissor, telefone)
+          para que possamos garantir a vaga. A falta de informações pode impossibilitar o embarque.</p>
+      </li>
+      <li><strong>Condições para Participação:</strong>
+        <p>O passeio só será realizado com um número mínimo de 14 pessoas. Caso não seja preenchido, será marcada uma
+          nova data ou será feito o reembolso.</p>
+      </li>
+      <li><strong>Condições Psicológicas e Físicas:</strong>
+        <p>É importante que o participante esteja em boas condições psicológicas e físicas para a excursão. Pessoas com
+          condições especiais ou em situações delicadas devem avaliar sua aptidão para o passeio.</p>
+      </li>
+      <li><strong>Responsabilidade de Acompanhantes:</strong>
+        <p>Cadeirantes e pessoas com necessidades especiais devem viajar acompanhados.</p>
+      </li>
+      <li><strong>Política para Passeios Promocionais:</strong>
+        <p>Em passeios promocionais, não há devolução do valor, mesmo com atestado médico. A vaga pode ser transferida
+          para outra pessoa até 24h antes do passeio (48h para passeios interestaduais).</p>
+      </li>
+    </ul>
+
+    <h5 class="highlight-text">Política de Privacidade (LEIA)</h5>
+    <p>Algumas informações como fotos, recordações e avaliações poderão ser usadas para divulgar nossos serviços. No
+      entanto, dados pessoais como nome, RG, CPF, e dados de contato nunca serão compartilhados com terceiros.</p>
+
+    <h6 class="highlight-text">Política de Cancelamento</h6>
+    <ul>
+      <li><strong>Cancelamento por parte do cliente:</strong>
+        <p>Desistências feitas até 15 dias antes do passeio têm direito à restituição de 100% do valor (para pagamentos
+          via PIX ou transferência bancária). Para pagamentos com cartão de crédito, o valor ficará como crédito.</p>
+      </li>
+      <li><strong>Desistências dentro de 8 dias:</strong>
+        <p>Em desistências dentro de 8 dias antes do passeio, o valor será restituído em 40% (para pagamentos via PIX ou
+          transferência bancária), e ficará como crédito para cartões de crédito.</p>
+      </li>
+      <li><strong>Desistências de última hora:</strong>
+        <p>Em caso de desistência 7 dias antes ou no próprio dia do passeio, o valor pago será perdido, mas poderá ser
+          transferido para outra pessoa.</p>
+      </li>
+      <li><strong>Cancelamento por parte da empresa:</strong>
+        <p>Em caso de cancelamento por nossa parte, ofereceremos o reembolso integral ou remarcação de data, conforme
+          acordado.</p>
+      </li>
+      <li><strong>Desistências no decorrer do passeio:</strong>
+        <p>Se o cliente desistir durante o passeio, será responsável pelos custos de transporte e retorno, e não haverá
+          reembolso.</p>
+      </li>
+    </ul>
+
+    <h5 class="highlight-text">Últimas Resalvas Quanto a Cancelamentos</h5>
+    <p>Não nos responsabilizamos por alterações climáticas, protestos ou outros eventos imprevistos que possam impactar
+      o passeio. Recomendamos que a compra seja feita apenas com a certeza do comparecimento.</p>
+  </div>
+
+
+  <!-- Nossos Tours -->
+  <div id="tours" class="tab-content">
+    <header>
+      <h2>NOSSOS TOUR</h2>
+      <div class="header-image">
+      </div>
+    </header>
+
+    <section class="tour">
+      <div class="tour-image">
+        <img src="tour1.jpg" alt="Tour em Salvador">
+      </div>
+      <div class="tour-info">
+        <h3 class="tour-city">Salvador</h3>
+        <p>Explore as belezas históricas de Salvador com nosso tour guiado. Você verá os principais pontos turísticos,
+          como o Pelourinho, Mercado Modelo e mais.</p>
+      </div>
+    </section>
+
+    <section class="tour">
+      <div class="tour-image">
+        <img src="tour2.jpg" alt="Tour em Rio de Janeiro">
+      </div>
+      <div class="tour-info">
+        <h3 class="tour-city">Rio de Janeiro</h3>
+        <p>Uma visita aos principais cartões-postais do Rio, como o Cristo Redentor, Pão de Açúcar, e as praias de
+          Copacabana e Ipanema.</p>
+      </div>
+    </section>
+
+    <section class="tour">
+      <div class="tour-image">
+        <img src="tour3.jpg" alt="Tour em Fortaleza">
+      </div>
+      <div class="tour-info">
+        <h3 class="tour-city">Fortaleza</h3>
+        <p>Descubra o melhor de Fortaleza, com seu clima tropical, belas praias e a rica cultura local.</p>
+      </div>
+    </section>
+
+    <section class="tour">
+      <div class="tour-image">
+        <img src="tour4.jpg" alt="Tour em Recife">
+      </div>
+      <div class="tour-info">
+        <h3 class="tour-city">Recife</h3>
+        <p>Conheça o Recife Antigo, o Marco Zero, o Museu do Frevo e outros pontos turísticos incríveis dessa cidade
+          encantadora.</p>
+      </div>
+    </section>
+
+  </div>
+
+
+  <footer>
+  </footer>
+  </div>
+
+  <!-- Contato -->
+  <div id="contato" class="tab-content">
+    <h2 class="highlight-text">CONTATO</h2>
+    <button
+      onclick="window.location.href='https://api.whatsapp.com/message/37IL3VYXCOBXP1?autoload=1&app_absent=0'">WhatsApp</button>
+    <button class="instagram"
+      onclick="window.location.href='https://www.instagram.com/rotadossonhos_tur/'">Instagram</button>
+    <section class="location">
+      <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=...localização_em_recife..."
+        allowfullscreen=""></iframe>
+    </section>
+  </div>
+
+
+  <section class="contact-form">
+    <h3>Dúvidas?</h3>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+      <label for="duvida">Dúvida:</label>
+      <textarea id="duvida" name="duvida" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  </div>
+
+  <script src="script.js"></script>
+
+  <head>
+    <title>Rota dos Sonhos</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para as fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet">
+  </head>
+
+</body>
+
+
+</html>

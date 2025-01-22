@@ -1,0 +1,604 @@
+/* Geral */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+.site-header {
+  background-color: #6f4f3a; /* Cor terrosa */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Georgia', serif;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #e0e0e0;
+  padding: 10px 0;
+}
+
+.tab-btn {
+  background-color: #6f4f3a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.tab-btn:hover {
+  background-color: #4e3629;
+}
+
+/* Home Section */
+.home-header {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.header-image img {
+  width: 100%;
+  max-width: 1200px;  /* Limita a largura máxima da imagem */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.intro-text {
+  padding: 20px;
+}
+
+.intro-text h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+/* Ajustando a seção com imagem e texto */
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  /* Alinha imagem e texto ao centro */
+  padding: 30px;
+  flex-wrap: wrap;  /* Permite que a imagem e o texto se ajustem em telas pequenas */
+}
+
+.text {
+  flex: 1;
+  padding-right: 20px;
+  max-width: 50%;  /* Limita a largura do texto */
+}
+
+.text h2 {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.image {
+  flex: 1;
+  max-width: 45%;  /* Limita a largura da imagem */
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Adiciona sombra na imagem */
+}
+
+/* Tarja de destaque "Conheça nossa equipe" */
+.team-header {
+  text-align: center;
+  background-color: #6f4f3a;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  z-index: 1; /* Garante que a tarja fique acima de qualquer elemento posterior */
+  position: relative;
+  width: 100%; /* Garante que a tarja ocupe toda a largura */
+}
+
+/* Seção da equipe */
+.team {
+  text-align: center;
+  padding: 50px 0;
+  position: relative; /* Permite a posição absoluta da tarja */
+}
+
+/* Ajustando a organização dos membros da equipe para ficarem lado a lado */
+.team {
+  text-align: center;
+  padding: 50px 0;
+  display: flex; /* Utiliza flexbox para alinhar os membros da equipe horizontalmente */
+  justify-content: center; /* Centraliza os membros horizontalmente */
+  flex-wrap: wrap; /* Permite que eles se ajustem caso a tela seja pequena */
+}
+
+.team-member {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+.team-photo {
+  width: 150px;  /* Tamanho da foto do membro */
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #6f4f3a;
+}
+
+/* Ajuste da tarja sobre o nome para que fiquem lado a lado */
+.team-member p {
+  font-family: 'Lora', serif; /* Fonte mais elegante */
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  background-color: #6f4f3a;  /* Cor de fundo terrosa */
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 0; /* Remove a margem inferior para alinhar melhor */
+  display: inline-block;  /* Faz com que o nome ocupe apenas o espaço necessário */
+  width: auto;  /* Ajusta a largura da tarja ao conteúdo */
+}
+
+/* Adicionando a fonte Lora via Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #6f4f3a;
+}
+
+/* Ajustes no nome dos membros e tarja */
+.team-member-name {
+  font-family: 'Poppins', sans-serif;  /* Fonte mais moderna */
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  background-color: #6f4f3a;  /* Cor de fundo da tarja */
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.highlight-text {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background-color: #6f4f3a;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  z-index: 1; /* Garante que a tarja fique acima de qualquer elemento posterior */
+  position: relative;
+  width: 100%; /* Garante que a tarja ocupe toda a largura */
+}
+
+.value {
+  margin: 30px 0;
+}
+
+.value h3 {
+  font-size: 1.8em;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formatação de input e textarea */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button[type="submit"], .btn-whatsapp {
+  width: 100%;
+  padding: 10px;
+  background-color: #6f4f3a;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover, .btn-whatsapp:hover {
+  background-color: #4e3629;
+}
+
+/* Navegação de Abas */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #e0e0e0;
+  padding: 20px 0;
+}
+
+.tab-btn {
+  background-color: #6f4f3a;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  margin: 0 20px; /* Aumenta o espaço entre as abas */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.tab-btn:hover {
+  background-color: #4e3629;
+}
+
+/* Estilo das abas ativas */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Ajustando o layout das tours para a imagem ficar à esquerda */
+.tour {
+  display: flex; /* Alinha imagem e texto lado a lado */
+  align-items: center; /* Alinha verticalmente */
+  margin: 30px 0; /* Espaçamento entre os tours */
+}
+
+.tour-image {
+  width: 50%;  /* Limita a largura da imagem */
+  margin-right: 20px; /* Espaçamento entre imagem e informações */
+}
+
+.tour-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tour-info {
+  flex: 1;  /* A informação ocupa o espaço restante */
+}
+
+
+.tour-info p {
+  font-size: 1em;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Tarja para o título "Nossos Tours" */
+header h2 {
+  background-color: #6f4f3a;  /* Cor terrosa */
+  color: white;
+  padding: 15px;
+  font-size: 2em;
+  border-radius: 5px;
+  margin-bottom: 30px; /* Espaço abaixo do título */
+}
+
+/* Estilo para as tarjas nos nomes das cidades */
+.tour-info h3 {
+  background-color: #6f4f3a;  /* Cor terrosa */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;  /* Remove a margem para o alinhamento correto */
+}
+/* Estilo dos botões de WhatsApp e Instagram */
+button {
+  background-color: #25d366;  /* Cor verde para o WhatsApp */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;  /* Bordas arredondadas */
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 20px 0;  /* Espaço entre os botões */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Efeito de transição suave */
+}
+
+button.instagram {
+  background-color: #E4405F;  /* Cor roxa para o Instagram */
+}
+
+button:hover {
+  transform: scale(1.1);  /* Aumenta o botão no hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  /* Sombra suave no hover */
+}
+
+button:focus {
+  outline: none;  /* Remove o contorno padrão ao clicar */
+}
+
+button:active {
+  transform: scale(1);  /* Restaura o tamanho ao clicar */
+}
+
+/* Estilo do texto na tarja "CONTATO" */
+.highlight-text {
+  background-color: #6f4f3a;  /* Cor terrosa */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 2em;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+/* Estilo para a tarja do título */
+.highlight-tarja {
+  background-color: #6f4f3a;  /* Cor terrosa */
+  color: white;
+  padding: 18px 20px;
+  text-align: center;
+  border-radius: 15px;
+  display: inline-block;  /* Faz com que o título fique apenas no tamanho necessário */
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 5 auto;  /* Centraliza a tarja horizontalmente */
+  max-width: 80%;  /* Limita o tamanho máximo da tarja */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Adiciona sombra para destacar mais */
+}
+/* Estilo para a tarja diferente */
+.highlight-tarja-diferente {
+  background-color: #4e3629;  /* Cor mais escura e sofisticada */
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 15px;  /* Bordas mais arredondadas para um visual mais suave */
+  display: inline-block;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 20px auto;  /* Centraliza e dá um pequeno espaço acima e abaixo */
+  max-width: 90%;  /* Limita o tamanho máximo da tarja */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave para dar destaque */
+  text-transform: uppercase;  /* Deixa o texto em maiúsculas para maior impacto */
+}
+
+/* Estilo do botão WhatsApp */
+.btn-whatsapp {
+  background-color: #25d366;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e;
+}
+/* Fonte para o corpo do texto */
+body {
+  font-family: 'Poppins', sans-serif; /* Fonte moderna para o corpo */
+  line-height: 1.6;
+}
+
+/* Fonte para os subtítulos e textos secundários */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif; /* Fonte serifada para subtítulos */
+  font-weight: 400; /* Peso mais leve para os subtítulos */
+  line-height: 1.5;
+}
+
+/* Exemplo de personalização para os títulos das seções */
+h2.highlight-text, h3.highlight-text {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #ffffff; /* Cor mais suave para subtítulos */
+}
+
+/* Ajustando as fontes dos botões, parágrafos e outros textos */
+p, li, .tour-info p {
+  font-family: 'Poppins', sans-serif; /* Usando Poppins para o corpo do texto */
+  font-size: 1em;
+  color: #333; /* Cor mais suave para textos gerais */
+  margin-bottom: 15px;
+}
+
+/* Ajustando o estilo do botão do WhatsApp */
+.btn-whatsapp {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+}
+/* Para telas pequenas (celulares) */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    font-size: 18px;
+  }
+
+  .tarja {
+    padding: 10px;
+  }
+
+  /* Ajuste de imagens */
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Ajuste de layout para celular */
+  .home-content, .nossos-tours {
+    flex-direction: column; /* Empilha os itens verticalmente */
+  }
+}
+
+/* Para tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .tarja {
+    padding: 15px;
+  }
+
+  /* Ajuste de layout para tablet */
+  .home-content, .nossos-tours {
+    flex-direction: row; /* Alinha os itens na horizontal */
+  }
+}
+
+/* Para telas maiores (computadores) */
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+
+  .tarja {
+    padding: 20px;
+  }
+
+  /* Layout padrão para desktop */
+  .home-content, .nossos-tours {
+    flex-direction: row; /* Alinha os itens na horizontal */
+  }
+}
+/* Container flexível para alinhamento */
+.home-content, .nossos-tours {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens igualmente */
+  flex-wrap: wrap; /* Permite que os itens quebrem a linha se não houver espaço */
+}
+
+/* Para itens dentro do container */
+.home-content div, .nossos-tours div {
+  flex: 1 1 30%; /* Cada item ocupará 30% do espaço disponível */
+  margin: 10px;
+}
+
+/* Para telas pequenas, os itens ficam empilhados */
+@media screen and (max-width: 600px) {
+  .home-content div, .nossos-tours div {
+    flex: 1 1 100%; /* Cada item ocupará 100% do espaço */
+  }
+}
+img {
+  max-width: 100%;  /* As imagens não ultrapassarão a largura do contêiner */
+  height: auto;     /* Mantém a proporção da imagem */
+}
+body {
+  font-size: 1rem; /* 1rem será igual a 16px no navegador */
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.875rem; /* Menor tamanho de fonte em telas pequenas */
+  }
+}
+/* Estilos do cabeçalho */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between; /* Espalha os itens de navegação */
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Para telas pequenas, empilhamos os itens do menu */
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* Empilha os itens na vertical */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+  }
+
+  .nav li {
+    margin: 10px 0; /* Mais espaço entre os itens */
+  }
+
+  /* Ajuste do tamanho da fonte em dispositivos móveis */
+  .nav a {
+    font-size: 1rem;
+  }
+}
+
+/* Se você quiser adicionar um menu hamburguer em telas menores */
+@media screen and (max-width: 480px) {
+  .nav {
+    display: none; /* Esconde a navegação */
+  }
+
+  .nav.active {
+    display: block; /* Mostra a navegação quando ativada */
+  }
+
+  /* Adicionar um botão de menu hamburguer */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+
