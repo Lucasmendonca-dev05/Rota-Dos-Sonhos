@@ -1,399 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rota dos Sonhos - Agência de Viagens</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Escalas Profissional | Login</title>
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
-  <!-- Cabeçalho com logo e menu -->
-  <header class="site-header">
-    <div class="header-container">
-      <div class="logo">
-        <h1>ROTA DOS SONHOS</h1>
-        <p>Viagens & Experiências</p>
-      </div>
-      <nav class="main-nav">
-        <button class="tab-btn active" onclick="openTab('home')">Home</button>
-        <button class="tab-btn" onclick="openTab('regras')">Regras</button>
-        <button class="tab-btn" onclick="openTab('tours')">Tours</button>
-        <button class="tab-btn" onclick="openTab('contato')">Contato</button>
-      </nav>
-      <div class="mobile-menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Transformando sonhos em viagens inesquecíveis</h2>
-      <p>Descubra os melhores destinos do Nordeste com quem entende do assunto</p>
-      <a href="#tours" class="btn-primary">Ver Tours</a>
-    </div>
-    <div class="hero-overlay"></div>
-  </section>
-
-  <!-- Conteúdo das abas -->
-  <main class="main-content">
-    <!-- Home -->
-    <div id="home" class="tab-content active">
-      <section class="about-section">
-        <div class="section-container">
-          <div class="about-text">
-            <h2 class="section-title">Sua jornada começa aqui</h2>
-            <p>Somos uma agência de viagem e turismo especializada em proporcionar as melhores experiências no Nordeste
-              brasileiro. De passeios bate-volta a pacotes completos com hospedagem, temos opções para todos os tipos de
-              viajantes.</p>
-            <ul class="features-list">
-              <li><i class="fas fa-check-circle"></i> Pacotes exclusivos</li>
-              <li><i class="fas fa-check-circle"></i> Guias especializados</li>
-              <li><i class="fas fa-check-circle"></i> Transporte confortável</li>
-              <li><i class="fas fa-check-circle"></i> Atendimento personalizado</li>
-            </ul>
-          </div>
-          <div class="about-image">
-            <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21" alt="Paisagem nordestina">
-          </div>
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="logo">
+          <i class="fas fa-calendar-alt"></i>
+          <span>EscalasPRO</span>
         </div>
-      </section>
-
-      <section class="team-section">
-        <h2 class="section-title">Nossa Equipe</h2>
-        <p class="section-subtitle">Os especialistas que tornam sua viagem especial</p>
-
-        <div class="team-grid">
-          <div class="team-card">
-            <div class="team-photo">
-              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Paula">
-            </div>
-            <h3>Paula</h3>
-            <p>Especialista em Destinos</p>
-            <div class="social-links">
-              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            </div>
-          </div>
-
-          <div class="team-card">
-            <div class="team-photo">
-              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Duda">
-            </div>
-            <h3>Duda</h3>
-            <p>Roteiros Personalizados</p>
-            <div class="social-links">
-              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            </div>
-          </div>
-
-          <div class="team-card">
-            <div class="team-photo">
-              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Francoa">
-            </div>
-            <h3>Francoa</h3>
-            <p>Logística de Viagens</p>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
-          </div>
-
-          <div class="team-card">
-            <div class="team-photo">
-              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Irmão">
-            </div>
-            <h3>Irmão</h3>
-            <p>Atendimento ao Cliente</p>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="values-section">
-        <h2 class="section-title">Nossos Princípios</h2>
-
-        <div class="values-grid">
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-bullseye"></i>
-            </div>
-            <h3>Missão</h3>
-            <p>Realizar sonhos através de viagens transformadoras, proporcionando experiências únicas que renovam
-              sentimentos e perspectivas de vida.</p>
-          </div>
-
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-eye"></i>
-            </div>
-            <h3>Visão</h3>
-            <p>Ser reconhecida como a melhor agência do Nordeste pela excelência no atendimento e satisfação dos
-              clientes.</p>
-          </div>
-
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-heart"></i>
-            </div>
-            <h3>Valores</h3>
-            <p>Respeito aos clientes, ao meio ambiente e aos parceiros. Compromisso com a realização dos sonhos de quem
-              viaja conosco.</p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Regras de Compra -->
-    <div id="regras" class="tab-content">
-      <section class="rules-section">
-        <h2 class="section-title">Políticas e Regras</h2>
-        <p class="section-subtitle">Informações importantes para sua viagem</p>
-
-        <div class="rules-container">
-          <div class="rules-card">
-            <h3><i class="fas fa-shopping-cart"></i> Política de Compra</h3>
-            <ul class="rules-list">
-              <li>Envie o comprovante de pagamento via WhatsApp para confirmação</li>
-              <li>Forneça dados completos de todos os participantes</li>
-              <li>Passeios requerem mínimo de 14 pessoas</li>
-              <li>Avalie suas condições físicas para o passeio</li>
-              <li>Cadeirantes devem viajar acompanhados</li>
-            </ul>
-          </div>
-
-          <div class="rules-card important">
-            <h3><i class="fas fa-exclamation-triangle"></i> Política de Cancelamento</h3>
-            <ul class="rules-list">
-              <li><strong>Até 15 dias antes:</strong> 100% de reembolso</li>
-              <li><strong>8-14 dias antes:</strong> 40% de reembolso</li>
-              <li><strong>7 dias ou menos:</strong> Sem reembolso</li>
-              <li>Passeios promocionais não são reembolsáveis</li>
-              <li>Transferência de vaga possível até 24h antes</li>
-            </ul>
-          </div>
-
-          <div class="rules-card">
-            <h3><i class="fas fa-lock"></i> Política de Privacidade</h3>
-            <p>Fotos e avaliações podem ser usadas para divulgação, mas nunca compartilhamos dados pessoais como RG, CPF
-              ou contatos com terceiros.</p>
-          </div>
-        </div>
-
-        <div class="disclaimer">
-          <p><i class="fas fa-info-circle"></i> Não nos responsabilizamos por alterações climáticas, protestos ou
-            eventos imprevistos. Recomendamos seguro viagem para maior tranquilidade.</p>
-        </div>
-      </section>
-    </div>
-
-    <!-- Nossos Tours -->
-    <div id="tours" class="tab-content">
-      <section class="tours-section">
-        <h2 class="section-title">Nossos Tours</h2>
-        <p class="section-subtitle">Descubra os melhores destinos do Nordeste</p>
-
-        <div class="tours-grid">
-          <div class="tour-card">
-            <div class="tour-image">
-              <img src="https://images.unsplash.com/photo-1543059080-f9b1272213d5" alt="Salvador">
-              <div class="tour-price">A partir de R$ 799</div>
-            </div>
-            <div class="tour-info">
-              <h3>Salvador - BA</h3>
-              <p>Explore o Pelourinho, Mercado Modelo e as belas praias da primeira capital do Brasil.</p>
-              <ul class="tour-features">
-                <li><i class="fas fa-clock"></i> 4 dias</li>
-                <li><i class="fas fa-hotel"></i> Hospedagem inclusa</li>
-                <li><i class="fas fa-utensils"></i> Café da manhã</li>
-              </ul>
-              <a href="#" class="btn-secondary">Saiba mais</a>
-            </div>
-          </div>
-
-          <div class="tour-card">
-            <div class="tour-image">
-              <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325" alt="Rio de Janeiro">
-              <div class="tour-price">A partir de R$ 1.299</div>
-            </div>
-            <div class="tour-info">
-              <h3>Rio de Janeiro - RJ</h3>
-              <p>Cristo Redentor, Pão de Açúcar e as famosas praias de Copacabana e Ipanema.</p>
-              <ul class="tour-features">
-                <li><i class="fas fa-clock"></i> 5 dias</li>
-                <li><i class="fas fa-hotel"></i> Hospedagem inclusa</li>
-                <li><i class="fas fa-utensils"></i> Meia pensão</li>
-              </ul>
-              <a href="#" class="btn-secondary">Saiba mais</a>
-            </div>
-          </div>
-
-          <div class="tour-card">
-            <div class="tour-image">
-              <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4" alt="Fortaleza">
-              <div class="tour-price">A partir de R$ 699</div>
-            </div>
-            <div class="tour-info">
-              <h3>Fortaleza - CE</h3>
-              <p>Conheça as praias de Canoa Quebrada, Jericoacoara e a vibrante vida noturna.</p>
-              <ul class="tour-features">
-                <li><i class="fas fa-clock"></i> 4 dias</li>
-                <li><i class="fas fa-hotel"></i> Hospedagem inclusa</li>
-                <li><i class="fas fa-bus"></i> Transporte</li>
-              </ul>
-              <a href="#" class="btn-secondary">Saiba mais</a>
-            </div>
-          </div>
-
-          <div class="tour-card">
-            <div class="tour-image">
-              <img src="https://images.unsplash.com/photo-1558002038-1055907df827" alt="Recife">
-              <div class="tour-price">A partir de R$ 599</div>
-            </div>
-            <div class="tour-info">
-              <h3>Recife - PE</h3>
-              <p>Marco Zero, Praia de Boa Viagem, Instituto Ricardo Brennand e o charmoso Recife Antigo.</p>
-              <ul class="tour-features">
-                <li><i class="fas fa-clock"></i> 3 dias</li>
-                <li><i class="fas fa-hotel"></i> Hospedagem inclusa</li>
-                <li><i class="fas fa-map-marked-alt"></i> City tour</li>
-              </ul>
-              <a href="#" class="btn-secondary">Saiba mais</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Contato -->
-    <div id="contato" class="tab-content">
-      <section class="contact-section">
-        <div class="contact-container">
-          <div class="contact-info">
-            <h2 class="section-title">Fale Conosco</h2>
-            <p>Estamos aqui para ajudar a planejar sua viagem dos sonhos!</p>
-
-            <div class="contact-methods">
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fab fa-whatsapp"></i>
-                </div>
-                <h3>WhatsApp</h3>
-                <p>(81) 98765-4321</p>
-                <a href="https://api.whatsapp.com/message/37IL3VYXCOBXP1" class="btn-primary">Enviar mensagem</a>
-              </div>
-
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fab fa-instagram"></i>
-                </div>
-                <h3>Instagram</h3>
-                <p>@rotadossonhos_tur</p>
-                <a href="https://www.instagram.com/rotadossonhos_tur/" class="btn-secondary">Seguir</a>
-              </div>
-
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <h3>Endereço</h3>
-                <p>Av. Boa Viagem, 1234 - Recife/PE</p>
-                <a href="#" class="btn-secondary">Ver no mapa</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-form">
-            <h3>Envie sua dúvida</h3>
-            <form>
-              <div class="form-group">
-                <label for="nome">Nome completo</label>
-                <input type="text" id="nome" name="nome" required>
-              </div>
-
-              <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-
-              <div class="form-group">
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" required>
-              </div>
-
-              <div class="form-group">
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-              </div>
-
-              <button type="submit" class="btn-primary">Enviar mensagem</button>
-            </form>
-          </div>
-        </div>
-
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.375389179666!2d-34.892443924687!3d-8.063290980514246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1990a1d259a1%3A0x9e3afdd17c8a4b7b!2sPraia%20de%20Boa%20Viagem!5e0!3m2!1spt-BR!2sbr!4v1689876543210!5m2!1spt-BR!2sbr"
-            allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </section>
-    </div>
-  </main>
-
-  <!-- Rodapé -->
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <h3>ROTA DOS SONHOS</h3>
-        <p>Transformando sonhos em viagens desde 2010</p>
+        <h1>Bem-vindo de volta</h1>
+        <p>Gerencie suas escalas de forma inteligente</p>
       </div>
 
-      <div class="footer-links">
-        <h4>Links Rápidos</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#tours">Tours</a></li>
-          <li><a href="#regras">Políticas</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-contact">
-        <h4>Contato</h4>
-        <p><i class="fas fa-phone-alt"></i> (81) 1234-5678</p>
-        <p><i class="fas fa-envelope"></i> contato@rotadossonhos.com</p>
-        <p><i class="fas fa-map-marker-alt"></i> Av. Boa Viagem, 1234 - Recife/PE</p>
-      </div>
-
-      <div class="footer-social">
-        <h4>Siga-nos</h4>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+      <form id="loginForm" class="auth-form">
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <div class="input-with-icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" placeholder="seu@email.com" required>
+          </div>
         </div>
+
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="••••••••" required>
+          </div>
+          <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-sign-in-alt"></i> Entrar
+        </button>
+
+        <div class="auth-divider">
+          <span>OU</span>
+        </div>
+
+        <button type="button" class="btn btn-google">
+          <i class="fab fa-google"></i> Continuar com Google
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        <p>Novo por aqui? <a href="#" id="registerLink">Crie uma conta</a></p>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <p>&copy; 2023 Rota dos Sonhos. Todos os direitos reservados.</p>
-      <p>Desenvolvido com <i class="fas fa-heart"></i> para viajantes</p>
+    <div class="auth-background">
+      <div class="bg-shapes">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+      </div>
     </div>
-  </footer>
+  </div>
 
-  <script src="script.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
