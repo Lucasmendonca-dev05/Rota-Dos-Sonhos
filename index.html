@@ -4,290 +4,396 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rota dos Sonhos</title>
+  <title>Rota dos Sonhos - Agência de Viagens</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-
-  <!-- Cabeçalho com o nome "ROTA DOS SONHOS" -->
+  <!-- Cabeçalho com logo e menu -->
   <header class="site-header">
-    <h1>ROTA DOS SONHOS</h1>
+    <div class="header-container">
+      <div class="logo">
+        <h1>ROTA DOS SONHOS</h1>
+        <p>Viagens & Experiências</p>
+      </div>
+      <nav class="main-nav">
+        <button class="tab-btn active" onclick="openTab('home')">Home</button>
+        <button class="tab-btn" onclick="openTab('regras')">Regras</button>
+        <button class="tab-btn" onclick="openTab('tours')">Tours</button>
+        <button class="tab-btn" onclick="openTab('contato')">Contato</button>
+      </nav>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
   </header>
 
-
-  <!-- Navegação de Abas -->
-  <div class="tabs">
-    <button class="tab-btn" onclick="openTab('home')">Home</button>
-    <button class="tab-btn" onclick="openTab('regras')">Regras de Compra</button>
-    <button class="tab-btn" onclick="openTab('tours')">Nossos Tours</button>
-    <button class="tab-btn" onclick="openTab('contato')">Contato</button>
-  </div>
-
-  <!-- Home -->
-  <div id="home" class="tab-content">
-    <header class="home-header">
-      <div class="header-image">
-        <h1 class="highlight-tarja">Sejam Bem-Vindos</h1> <!-- Adicionando a tarja ao título -->
-        <img src="sua-imagem.jpg" alt="Imagem de viagem">
-      </div>
-      <div class="intro-text">
-        <h1 class="highlight-tarja-diferente">Desfrute das nossas viagens e passeios</h1> <!-- Tarja diferente -->
-        <a href="https://api.whatsapp.com/message/37IL3VYXCOBXP1?autoload=1&app_absent=0" class="btn-whatsapp">Entre em
-          contato pelo WhatsApp</a>
-      </div>
-    </header>
-
-    <section class="info-section">
-      <div class="text">
-        <h2 class="highlight-text">Conheça nossos serviços</h2>
-        <p>Somos uma agencia de viagem e turismo que proporciona as melhores ofertas. Reserve passeios com hospedagens,
-          Citytour e passeios bate volta todos os fins de semana conosco.
-
-          Temos sempre ofertas imperdíveis para o seu final de semana viajando sozinho ou em viagens em grupo e até
-          mesmo organizando aquela confraternização de sua empresa. Não hésite em nos consultar e ver as ofertas e
-          pacotes disponíveis. </p>
-      </div>
-      <div class="image">
-        <img src="imagem-info.jpg" alt="Imagem informativa">
-      </div>
-    </section>
-
-    <section class="team">
-      <h2 class="highlight-text">Conheça nossa equipe</h2>
-      <div class="team-member">
-        <img class="team-photo" src="membro1.jpg" alt="Membro da equipe">
-        <p>Paula</p>
-      </div>
-      <div class="team-member">
-        <img class="team-photo" src="membro2.jpg" alt="Membro da equipe">
-        <p>Duda</p>
-      </div>
-      <div class="team-member">
-        <img class="team-photo" src="membro3.jpg" alt="Membro da equipe">
-        <p>Francoa</p>
-      </div>
-      <div class="team-member">
-        <img class="team-photo" src="membro4.jpg" alt="Membro da equipe">
-        <p>Irmão</p>
-      </div>
-    </section>
-
-    <section class="values">
-      <div class="value">
-        <h3 class="highlight-text">Missão</h3>
-        <p>É a satisfação em realizar sonhos através de viagens, renovando os sentimentos de nossos clientes a cada
-          passeio realizado e mostrando que a visão de vida é transformada a cada lugar que nos dispomos a conhecer.
-          Estamos sempre cheios de alegria e motivação, buscando realizar um serviço diferenciado e humanizado para
-          tornar a nossa empresa cada dia melhor e reconhecida no mercado.</p>
-      </div>
-      <div class="value">
-        <h3 class="highlight-text">Visão</h3>
-        <p>Buscamos alcançar o número máximo de clientes satisfeitos em nossos serviços de viagens e turismo, visando
-          ser a melhor agência deste ramo de nosso Nordeste no que se diz respeito a satisfação e confiança de nossos
-          clientes e futuros clientes. Mantendo-se sempre no mercado com as melhores avaliações e reconhecimento.</p>
-      </div>
-      <div class="value">
-        <h3 class="highlight-text">Valores</h3>
-        <p>Respeito a todos os clientes, pois dependemos exclusivamente deles pra existir;
-
-          Respeito ao meio ambiente, pois é dele que guardamos em nossas memórias os melhores lugares;
-
-          Respeito aos nossos parceiros, pois são eles quem nos ajudam a realizar os sonhos dos clientes que acreditam
-          no serviço de nossa empresa; e acima de tudo compromisso com a realização dos sonhos de nossos clientes.</p>
-      </div>
-    </section>
-
-    <section class="location">
-      <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=...localização_em_recife..."
-        allowfullscreen=""></iframe>
-    </section>
-
-    <section class="contact-form">
-      <h3>Dúvidas?</h3>
-      <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required>
-        <label for="duvida">Dúvida:</label>
-        <textarea id="duvida" name="duvida" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </div>
-
-  <!-- Regras de Compra -->
-  <div id="regras" class="tab-content">
-    <h2 class="highlight-text">É necessário ler com atenção</h2>
-    <h3 class="highlight-text">Política de Compra e Cancelamento</h3>
-
-    <h4 class="highlight-text">Política de Compra</h4>
-    <p>NÃO EFETUAR A COMPRA CASO POSSUA QUALQUER TIPO DE SITUAÇÃO PREVIA EM QUE VOCÊ NÃO POSSA COMPARECER AO PASSEIO
-      (não aceitaremos reclamações posteriores). É NECESSÁRIO LER TODAS AS NORMATIVAS.</p>
-
-    <ul>
-      <li><strong>Regras Gerais de Procedimento:</strong>
-        <p>Após a compra em nossa loja ou através de nosso WhatsApp, com pagamento via Cartão de Crédito, Transferência
-          Bancária ou PIX, o cliente deve nos enviar a foto ou comprovante de transação através do WhatsApp para
-          confirmação da vaga.</p>
-      </li>
-      <li><strong>Envio de Dados Pessoais:</strong>
-        <p>É necessário enviar os dados pessoais de todos os participantes (nome completo, RG, órgão emissor, telefone)
-          para que possamos garantir a vaga. A falta de informações pode impossibilitar o embarque.</p>
-      </li>
-      <li><strong>Condições para Participação:</strong>
-        <p>O passeio só será realizado com um número mínimo de 14 pessoas. Caso não seja preenchido, será marcada uma
-          nova data ou será feito o reembolso.</p>
-      </li>
-      <li><strong>Condições Psicológicas e Físicas:</strong>
-        <p>É importante que o participante esteja em boas condições psicológicas e físicas para a excursão. Pessoas com
-          condições especiais ou em situações delicadas devem avaliar sua aptidão para o passeio.</p>
-      </li>
-      <li><strong>Responsabilidade de Acompanhantes:</strong>
-        <p>Cadeirantes e pessoas com necessidades especiais devem viajar acompanhados.</p>
-      </li>
-      <li><strong>Política para Passeios Promocionais:</strong>
-        <p>Em passeios promocionais, não há devolução do valor, mesmo com atestado médico. A vaga pode ser transferida
-          para outra pessoa até 24h antes do passeio (48h para passeios interestaduais).</p>
-      </li>
-    </ul>
-
-    <h5 class="highlight-text">Política de Privacidade (LEIA)</h5>
-    <p>Algumas informações como fotos, recordações e avaliações poderão ser usadas para divulgar nossos serviços. No
-      entanto, dados pessoais como nome, RG, CPF, e dados de contato nunca serão compartilhados com terceiros.</p>
-
-    <h6 class="highlight-text">Política de Cancelamento</h6>
-    <ul>
-      <li><strong>Cancelamento por parte do cliente:</strong>
-        <p>Desistências feitas até 15 dias antes do passeio têm direito à restituição de 100% do valor (para pagamentos
-          via PIX ou transferência bancária). Para pagamentos com cartão de crédito, o valor ficará como crédito.</p>
-      </li>
-      <li><strong>Desistências dentro de 8 dias:</strong>
-        <p>Em desistências dentro de 8 dias antes do passeio, o valor será restituído em 40% (para pagamentos via PIX ou
-          transferência bancária), e ficará como crédito para cartões de crédito.</p>
-      </li>
-      <li><strong>Desistências de última hora:</strong>
-        <p>Em caso de desistência 7 dias antes ou no próprio dia do passeio, o valor pago será perdido, mas poderá ser
-          transferido para outra pessoa.</p>
-      </li>
-      <li><strong>Cancelamento por parte da empresa:</strong>
-        <p>Em caso de cancelamento por nossa parte, ofereceremos o reembolso integral ou remarcação de data, conforme
-          acordado.</p>
-      </li>
-      <li><strong>Desistências no decorrer do passeio:</strong>
-        <p>Se o cliente desistir durante o passeio, será responsável pelos custos de transporte e retorno, e não haverá
-          reembolso.</p>
-      </li>
-    </ul>
-
-    <h5 class="highlight-text">Últimas Resalvas Quanto a Cancelamentos</h5>
-    <p>Não nos responsabilizamos por alterações climáticas, protestos ou outros eventos imprevistos que possam impactar
-      o passeio. Recomendamos que a compra seja feita apenas com a certeza do comparecimento.</p>
-  </div>
-
-
-  <!-- Nossos Tours -->
-  <div id="tours" class="tab-content">
-    <header>
-      <h2>NOSSOS TOUR</h2>
-      <div class="header-image">
-      </div>
-    </header>
-
-    <section class="tour">
-      <div class="tour-image">
-        <img src="tour1.jpg" alt="Tour em Salvador">
-      </div>
-      <div class="tour-info">
-        <h3 class="tour-city">Salvador</h3>
-        <p>Explore as belezas históricas de Salvador com nosso tour guiado. Você verá os principais pontos turísticos,
-          como o Pelourinho, Mercado Modelo e mais.</p>
-      </div>
-    </section>
-
-    <section class="tour">
-      <div class="tour-image">
-        <img src="tour2.jpg" alt="Tour em Rio de Janeiro">
-      </div>
-      <div class="tour-info">
-        <h3 class="tour-city">Rio de Janeiro</h3>
-        <p>Uma visita aos principais cartões-postais do Rio, como o Cristo Redentor, Pão de Açúcar, e as praias de
-          Copacabana e Ipanema.</p>
-      </div>
-    </section>
-
-    <section class="tour">
-      <div class="tour-image">
-        <img src="tour3.jpg" alt="Tour em Fortaleza">
-      </div>
-      <div class="tour-info">
-        <h3 class="tour-city">Fortaleza</h3>
-        <p>Descubra o melhor de Fortaleza, com seu clima tropical, belas praias e a rica cultura local.</p>
-      </div>
-    </section>
-
-    <section class="tour">
-      <div class="tour-image">
-        <img src="tour4.jpg" alt="Tour em Recife">
-      </div>
-      <div class="tour-info">
-        <h3 class="tour-city">Recife</h3>
-        <p>Conheça o Recife Antigo, o Marco Zero, o Museu do Frevo e outros pontos turísticos incríveis dessa cidade
-          encantadora.</p>
-      </div>
-    </section>
-
-  </div>
-
-
-  <footer>
-  </footer>
-  </div>
-
-  <!-- Contato -->
-  <div id="contato" class="tab-content">
-    <h2 class="highlight-text">CONTATO</h2>
-    <button
-      onclick="window.location.href='https://api.whatsapp.com/message/37IL3VYXCOBXP1?autoload=1&app_absent=0'">WhatsApp</button>
-    <button class="instagram"
-      onclick="window.location.href='https://www.instagram.com/rotadossonhos_tur/'">Instagram</button>
-    <section class="location">
-      <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=...localização_em_recife..."
-        allowfullscreen=""></iframe>
-    </section>
-  </div>
-
-
-  <section class="contact-form">
-    <h3>Dúvidas?</h3>
-    <form>
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="telefone">Telefone:</label>
-      <input type="tel" id="telefone" name="telefone" required>
-      <label for="duvida">Dúvida:</label>
-      <textarea id="duvida" name="duvida" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Transformando sonhos em viagens inesquecíveis</h2>
+      <p>Descubra os melhores destinos do Nordeste com quem entende do assunto</p>
+      <a href="#tours" class="btn-primary">Ver Tours</a>
+    </div>
+    <div class="hero-overlay"></div>
   </section>
-  </div>
+
+  <!-- Conteúdo das abas -->
+  <main class="main-content">
+    <!-- Home -->
+    <div id="home" class="tab-content active">
+      <section class="about-section">
+        <div class="section-container">
+          <div class="about-text">
+            <h2 class="section-title">Sua jornada começa aqui</h2>
+            <p>Somos uma agência de viagem e turismo especializada em proporcionar as melhores experiências no Nordeste
+              brasileiro. De passeios bate-volta a pacotes completos com hospedagem, temos opções para todos os tipos de
+              viajantes.</p>
+            <ul class="features-list">
+              <li><i class="fas fa-check-circle"></i> Pacotes exclusivos</li>
+              <li><i class="fas fa-check-circle"></i> Guias especializados</li>
+              <li><i class="fas fa-check-circle"></i> Transporte confortável</li>
+              <li><i class="fas fa-check-circle"></i> Atendimento personalizado</li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21" alt="Paisagem nordestina">
+          </div>
+        </div>
+      </section>
+
+      <section class="team-section">
+        <h2 class="section-title">Nossa Equipe</h2>
+        <p class="section-subtitle">Os especialistas que tornam sua viagem especial</p>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Paula">
+            </div>
+            <h3>Paula</h3>
+            <p>Especialista em Destinos</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Duda">
+            </div>
+            <h3>Duda</h3>
+            <p>Roteiros Personalizados</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Francoa">
+            </div>
+            <h3>Francoa</h3>
+            <p>Logística de Viagens</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Irmão">
+            </div>
+            <h3>Irmão</h3>
+            <p>Atendimento ao Cliente</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="values-section">
+        <h2 class="section-title">Nossos Princípios</h2>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>Missão</h3>
+            <p>Realizar sonhos através de viagens transformadoras, proporcionando experiências únicas que renovam
+              sentimentos e perspectivas de vida.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3>Visão</h3>
+            <p>Ser reconhecida como a melhor agência do Nordeste pela excelência no atendimento e satisfação dos
+              clientes.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Valores</h3>
+            <p>Respeito aos clientes, ao meio ambiente e aos parceiros. Compromisso com a realização dos sonhos de quem
+              viaja conosco.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Regras de Compra -->
+    <div id="regras" class="tab-content">
+      <section class="rules-section">
+        <h2 class="section-title">Políticas e Regras</h2>
+        <p class="section-subtitle">Informações importantes para sua viagem</p>
+
+        <div class="rules-container">
+          <div class="rules-card">
+            <h3><i class="fas fa-shopping-cart"></i> Política de Compra</h3>
+            <ul class="rules-list">
+              <li>Envie o comprovante de pagamento via WhatsApp para confirmação</li>
+              <li>Forneça dados completos de todos os participantes</li>
+              <li>Passeios requerem mínimo de 14 pessoas</li>
+              <li>Avalie suas condições físicas para o passeio</li>
+              <li>Cadeirantes devem viajar acompanhados</li>
+            </ul>
+          </div>
+
+          <div class="rules-card important">
+            <h3><i class="fas fa-exclamation-triangle"></i> Política de Cancelamento</h3>
+            <ul class="rules-list">
+              <li><strong>Até 15 dias antes:</strong> 100% de reembolso</li>
+              <li><strong>8-14 dias antes:</strong> 40% de reembolso</li>
+              <li><strong>7 dias ou menos:</strong> Sem reembolso</li>
+              <li>Passeios promocionais não são reembolsáveis</li>
+              <li>Transferência de vaga possível até 24h antes</li>
+            </ul>
+          </div>
+
+          <div class="rules-card">
+            <h3><i class="fas fa-lock"></i> Política de Privacidade</h3>
+            <p>Fotos e avaliações podem ser usadas para divulgação, mas nunca compartilhamos dados pessoais como RG, CPF
+              ou contatos com terceiros.</p>
+          </div>
+        </div>
+
+        <div class="disclaimer">
+          <p><i class="fas fa-info-circle"></i> Não nos responsabilizamos por alterações climáticas, protestos ou
+            eventos imprevistos. Recomendamos seguro viagem para maior tranquilidade.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Nossos Tours -->
+    <div id="tours" class="tab-content">
+      <section class="tours-section">
+        <h2 class="section-title">Nossos Tours</h2>
+        <p class="section-subtitle">Descubra os melhores destinos do Nordeste</p>
+
+        <div class="tours-grid">
+          <div class="tour-card">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1543059080-f9b1272213d5" alt="Salvador">
+              <div class="tour-price">A partir de R$ 799</div>
+            </div>
+            <div class="tour-info">
+              <h3>Salvador - BA</h3>
+              <p>Explore o Pelourinho, Mercado Modelo e as belas praias da primeira capital do Brasil.</p>
+              <ul class="tour-features">
+                <li><i class="fas fa-clock"></i> 4 dias</li>
+                <li><i class="fas fa-hotel"></i> Hospedagem inclusa</li>
+                <li><i class="fas fa-utensils"></i> Café da manhã</li>
+              </ul>
+              <a href="#" class="btn-secondary">Saiba mais</a>
+            </div>
+          </div>
+
+          <div class="tour-card">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325" alt="Rio de Janeiro">
+              <div class="tour-price">A partir de R$ 1.299</div>
+            </div>
+            <div class="tour-info">
+              <h3>Rio de Janeiro - RJ</h3>
+              <p>Cristo Redentor, Pão de Açúcar e as famosas praias de Copacabana e Ipanema.</p>
+              <ul class="tour-features">
+                <li><i class="fas fa-clock"></i> 5 dias</li>
+                <li><i class="fas fa-hotel"></i> Hospedagem inclusa</li>
+                <li><i class="fas fa-utensils"></i> Meia pensão</li>
+              </ul>
+              <a href="#" class="btn-secondary">Saiba mais</a>
+            </div>
+          </div>
+
+          <div class="tour-card">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4" alt="Fortaleza">
+              <div class="tour-price">A partir de R$ 699</div>
+            </div>
+            <div class="tour-info">
+              <h3>Fortaleza - CE</h3>
+              <p>Conheça as praias de Canoa Quebrada, Jericoacoara e a vibrante vida noturna.</p>
+              <ul class="tour-features">
+                <li><i class="fas fa-clock"></i> 4 dias</li>
+                <li><i class="fas fa-hotel"></i> Hospedagem inclusa</li>
+                <li><i class="fas fa-bus"></i> Transporte</li>
+              </ul>
+              <a href="#" class="btn-secondary">Saiba mais</a>
+            </div>
+          </div>
+
+          <div class="tour-card">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1558002038-1055907df827" alt="Recife">
+              <div class="tour-price">A partir de R$ 599</div>
+            </div>
+            <div class="tour-info">
+              <h3>Recife - PE</h3>
+              <p>Marco Zero, Praia de Boa Viagem, Instituto Ricardo Brennand e o charmoso Recife Antigo.</p>
+              <ul class="tour-features">
+                <li><i class="fas fa-clock"></i> 3 dias</li>
+                <li><i class="fas fa-hotel"></i> Hospedagem inclusa</li>
+                <li><i class="fas fa-map-marked-alt"></i> City tour</li>
+              </ul>
+              <a href="#" class="btn-secondary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contato -->
+    <div id="contato" class="tab-content">
+      <section class="contact-section">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2 class="section-title">Fale Conosco</h2>
+            <p>Estamos aqui para ajudar a planejar sua viagem dos sonhos!</p>
+
+            <div class="contact-methods">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>WhatsApp</h3>
+                <p>(81) 98765-4321</p>
+                <a href="https://api.whatsapp.com/message/37IL3VYXCOBXP1" class="btn-primary">Enviar mensagem</a>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <h3>Instagram</h3>
+                <p>@rotadossonhos_tur</p>
+                <a href="https://www.instagram.com/rotadossonhos_tur/" class="btn-secondary">Seguir</a>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Endereço</h3>
+                <p>Av. Boa Viagem, 1234 - Recife/PE</p>
+                <a href="#" class="btn-secondary">Ver no mapa</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Envie sua dúvida</h3>
+            <form>
+              <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary">Enviar mensagem</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.375389179666!2d-34.892443924687!3d-8.063290980514246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1990a1d259a1%3A0x9e3afdd17c8a4b7b!2sPraia%20de%20Boa%20Viagem!5e0!3m2!1spt-BR!2sbr!4v1689876543210!5m2!1spt-BR!2sbr"
+            allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h3>ROTA DOS SONHOS</h3>
+        <p>Transformando sonhos em viagens desde 2010</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#regras">Políticas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p><i class="fas fa-phone-alt"></i> (81) 1234-5678</p>
+        <p><i class="fas fa-envelope"></i> contato@rotadossonhos.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Av. Boa Viagem, 1234 - Recife/PE</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Siga-nos</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2023 Rota dos Sonhos. Todos os direitos reservados.</p>
+      <p>Desenvolvido com <i class="fas fa-heart"></i> para viajantes</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
-
-  <head>
-    <title>Rota dos Sonhos</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Link para as fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet">
-  </head>
-
 </body>
-
 
 </html>
