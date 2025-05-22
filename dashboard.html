@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escalas Profissional | Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <i class="fas fa-calendar-alt"></i>
+          <span>EscalasPRO</span>
+        </div>
+        <button class="sidebar-toggle" aria-label="Abrir/fechar menu lateral">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active">
+            <a href="#">
+              <i class="fas fa-home"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-calendar"></i>
+              <span>Minhas Escalas</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-exchange-alt"></i>
+              <span>Trocas</span>
+              <span class="badge">3</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-users"></i>
+              <span>Equipe</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cog"></i>
+              <span>Configurações</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-profile">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+          <div class="user-info">
+            <strong>João Silva</strong>
+            <span>admin@empresa.com</span>
+          </div>
+          <button class="logout-btn" aria-label="Sair">
+            <i class="fas fa-sign-out-alt"></i>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="main-header">
+        <h1>Dashboard</h1>
+        <div class="header-actions">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Pesquisar...">
+          </div>
+          <button class="btn btn-primary">
+            <i class="fas fa-plus"></i> Nova Escala
+          </button>
+        </div>
+      </header>
+
+      <div class="content-grid">
+        <!-- Stats Cards -->
+        <div class="stats-card bg-primary">
+          <div class="stats-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="stats-info">
+            <h3>24</h3>
+            <p>Escalas este mês</p>
+          </div>
+        </div>
+
+        <div class="stats-card bg-success">
+          <div class="stats-icon">
+            <i class="fas fa-user-clock"></i>
+          </div>
+          <div class="stats-info">
+            <h3>5</h3>
+            <p>Trocas pendentes</p>
+          </div>
+        </div>
+
+        <div class="stats-card bg-warning">
+          <div class="stats-icon">
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+          <div class="stats-info">
+            <h3>2</h3>
+            <p>Conflitos</p>
+          </div>
+        </div>
+
+        <div class="stats-card bg-danger">
+          <div class="stats-icon">
+            <i class="fas fa-user-slash"></i>
+          </div>
+          <div class="stats-info">
+            <h3>1</h3>
+            <p>Indisponível</p>
+          </div>
+        </div>
+
+        <!-- Main Calendar -->
+        <div class="calendar-card">
+          <div class="card-header">
+            <h2>Calendário</h2>
+            <div class="calendar-nav">
+              <button aria-label="Mês anterior"><i class="fas fa-chevron-left"></i></button>
+              <span>Julho 2023</span>
+              <button aria-label="Próximo mês"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="calendar-grid">
+            <!-- Dias da semana -->
+            <div class="calendar-day-header">Dom</div>
+            <div class="calendar-day-header">Seg</div>
+            <div class="calendar-day-header">Ter</div>
+            <div class="calendar-day-header">Qua</div>
+            <div class="calendar-day-header">Qui</div>
+            <div class="calendar-day-header">Sex</div>
+            <div class="calendar-day-header">Sáb</div>
+
+            <!-- Dias do mês -->
+            <!-- Espaços vazios no início -->
+            <div class="calendar-day empty"></div>
+            <div class="calendar-day empty"></div>
+            <div class="calendar-day empty"></div>
+            <div class="calendar-day empty"></div>
+            <div class="calendar-day empty"></div>
+
+            <!-- Dias com conteúdo -->
+            <div class="calendar-day">
+              <span class="day-number">1</span>
+              <div class="calendar-event event-blue">
+                <span>Plantão - João</span>
+              </div>
+            </div>
+            <div class="calendar-day">
+              <span class="day-number">2</span>
+            </div>
+            <!-- ... mais dias ... -->
+          </div>
+        </div>
+
+        <!-- Trocas Pendentes -->
+        <div class="trades-card">
+          <div class="card-header">
+            <h2>Trocas Pendentes</h2>
+            <a href="#" class="see-all">Ver todas</a>
+          </div>
+          <div class="trades-list">
+            <div class="trade-item">
+              <div class="trade-info">
+                <div class="trade-users">
+                  <div class="user-avatar">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria">
+                  </div>
+                  <i class="fas fa-exchange-alt"></i>
+                  <div class="user-avatar">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Carlos">
+                  </div>
+                </div>
+                <div class="trade-details">
+                  <h4>12/07 ↔ 19/07</h4>
+                  <p>Plantão de domingo</p>
+                </div>
+              </div>
+              <div class="trade-actions">
+                <button class="btn btn-success btn-sm" aria-label="Aceitar troca">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button class="btn btn-danger btn-sm" aria-label="Recusar troca">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Mais itens de troca... -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
